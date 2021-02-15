@@ -1,0 +1,853 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WriteAndShareWebApi</name>
+    </assembly>
+    <members>
+        <member name="M:WriteAndShareWebApi.Controllers.AuthenticationController.Register(WriteAndShareWebApi.Models.RequestModels.UserRegisterRequest)">
+             <summary>
+             Regista um utilizador.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 POST /auth/register
+                 {
+                    "Username": "TRIPALOSKI",
+                    "Password": "TRIPALOSKI",
+                    "Email": "TRIPALOSKI@gmail.com",
+                    "FirstName": "TRIPA",
+                    "LastName": "LOSKI",
+                    "Gender": "Male",
+                    "BirthDate": "1999-01-30",
+                    "Telephone": "+391 919283942",
+                    "Address": "Far Far Away",
+                    "Privacy": "Public"
+                 }
+            
+             </remarks>
+             <param name="user"></param>
+             <returns>Token de autenticação.</returns>
+             <response code="200">Retorna o token de autenticação.</response>
+             <response code="400">Retorna se contiver informação inválida.</response>   
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.AuthenticationController.Authenticate(WriteAndShareWebApi.Models.RequestModels.UserAuthenticationRequest)">
+             <summary>
+             Autentica um utilizador.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 POST /auth/login
+                 {
+                    "Username": "TRIPALOSKI",
+                    "Password": "TRIPALOSKI"
+                 }
+            
+             </remarks>
+             <param name="user"></param>
+             <returns>Token de autenticação.</returns>
+             <response code="200">Retorna o token de autenticação.</response>
+             <response code="400">Retorna se contiver informação inválida.</response>
+             <response code="404">Retorna se o username não estiver associado a nenhum utilizador.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.CommentController.GetCommentsByUser(System.String)">
+             <summary>
+             Obtêm a lista de comentários feitos por um utilizador.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /users/TRIPALOSKI/comments
+            
+             </remarks>
+             <param name="username"></param>
+             <returns>Lista de comentários.</returns>
+             <response code="200">Retorna uma lista de comentários.</response>
+             <response code="403">Retorna se o utilizador requisitante não tiver permissões para aceder a esta informação.</response>
+             <response code="404">Retorna se o username não estiver associado a um utilizador.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response> 
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.CommentController.GetCommentsByPublication(System.Int32)">
+             <summary>
+             Obtêm a lista de comentários feitos a uma publicação.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /posts/1/comments
+            
+             </remarks>
+             <param name="postId"></param>
+             <returns>Lista de comentários.</returns>
+             <response code="200">Retorna uma lista de comentários.</response>
+             <response code="404">Retorna se o id não estiver associado a uma publicação.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response> 
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.CommentController.GetCommentsByComment(System.Int32)">
+             <summary>
+             Obtêm a lista de comentários feitos a um comentário.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /comments/1/comments
+            
+             </remarks>
+             <param name="commentId"></param>
+             <returns>Lista de comentários.</returns>
+             <response code="200">Retorna uma lista de comentários.</response>
+             <response code="404">Retorna se o id não estiver associado a um comentário.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response> 
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.CommentController.GetMyComments">
+             <summary>
+             Obtêm a lista de comentários feitos pelo utilizador requisitante.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /comments/mycomments
+            
+             </remarks>
+             <returns>Lista de comentários.</returns>
+             <response code="200">Retorna a lista de comentários.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response> 
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.CommentController.GetCommentById(System.Int32)">
+             <summary>
+             Obtêm um comentário.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /comments/1
+            
+             </remarks>
+             <param name="commentId"></param>
+             <returns>Um comentários.</returns>
+             <response code="200">Retorna um comentário.</response>
+             <response code="403">Retorna se o utilizador requisitante não tiver permissões para aceder a este comentário.</response>
+             <response code="404">Retorna se o id não estiver associado a um comentário.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response> 
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.CommentController.AddComment(WriteAndShareWebApi.Models.RequestModels.Comments.CreateCommentRequest)">
+             <summary>
+             Cria um novo comentário.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 POST /comments/new
+                 {
+                    "Target": "1",
+                    "Message": "Mensagem do comentário",
+                    "Mentions": ["TRIPALOSKI", "TRIPALOSKI1"]
+                 }
+            
+             </remarks>
+             <param name="req"></param>
+             <returns>O comentário criado.</returns>
+             <response code="200">Retorna o comentário criado.</response>
+             <response code="403">Retorna se o utilizador requisitante não tiver permissões para comentar a publicação ou comentário alvo.</response>
+             <response code="404">Retorna se a publicação ou comentário alvo não existirem ou se um dos utilizadores mencionados pelo utilizador requisitante
+             não existe.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response> 
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.CommentController.DeleteComment(System.Int32)">
+             <summary>
+             Elimina o conteúdo de um comentário.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 DELETE /comments/1
+            
+             </remarks>
+             <param name="commentId"></param>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="403">Retorna se o utilizador requisitante estiver a tentar eliminar um comentário de um outro utilizador.</response>
+             <response code="404">Retorna se o id não estiver associado a um comentário.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response> 
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.FollowerController.GetFollowers">
+             <summary>
+             Obtêm a lista de utilizadores que seguem o utilizador requisitante.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /following
+            
+             </remarks>
+             <returns>Lista de utilizadores que seguem o utilizador requisitante.</returns>
+             <response code="200">Retorna a lista de utilizadores que seguem o utilizador requisitante.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>  
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.FollowerController.GetFollowing">
+             <summary>
+             Obtêm a lista de utilizadores que o utilizador requisitante segue.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /followers
+            
+             </remarks>
+             <returns>Lista de utilizadores que o utilizador requisitante segue.</returns>
+             <response code="200">Retorna a lista de utilizadores que o utilizador requisitante segue.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>    
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.FollowerController.GetRequests">
+             <summary>
+             Obtêm a lista de pedidos feitos para seguir o utilizador requisitante.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /requests
+            
+             </remarks>
+             <returns>Lista de pedidos feitos para seguir o utilizador requisitante.</returns>
+             <response code="200">Retorna a lista de pedidos feitos para seguir o utilizador requisitante.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.FollowerController.GetRequested">
+             <summary>
+             Obtêm a lista de pedidos feitos pelo utilizador requisitante para seguir outros utilizadores.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /requested
+            
+             </remarks>
+             <returns>Lista de pedidos feitos pelo utilizador requisitante para seguir outros utilizadores.</returns>
+             <response code="200">Retorna a lista de pedidos feitos pelo utilizador requisitante para seguir outros utilizadores.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.FollowerController.GetUserFollowers(System.String)">
+             <summary>
+             Obtêm a lista de seguidores de um utilizador.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /followers/TRIPALOSKI
+            
+             </remarks>
+             <param name="username"></param>
+             <returns>Lista de seguidores de um utilizador.</returns>
+             <response code="200">Retorna a lista de seguidores de um utilizador.</response>
+             <response code="403">Retorna se o utilizador requisitante não tiver permissões para aceder a esta informação.</response>
+             <response code="404">Retorna se o username não estiver associado a nenhum utilizador.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.FollowerController.GetUserFollowing(System.String)">
+             <summary>
+             Obtêm a lista de utilizadores que um utilizador segue.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /following/TRIPALOSKI
+            
+             </remarks>
+             <param name="username"></param>
+             <returns>Lista de utilizadores que um utilizador segue.</returns>
+             <response code="200">Retorna a lista de utilizadores que um utilizador segue.</response>
+             <response code="403">Retorna se o utilizador requisitante não tiver permissões para aceder a esta informação.</response>
+             <response code="404">Retorna se o username não estiver associado a nenhum utilizador.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.FollowerController.FollowUser(System.String)">
+             <summary>
+             Segue um utilizador.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 POST /follow/TRIPALOSKI
+            
+             </remarks>
+             <param name="username"></param>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso. Caso a privacidade do utilizador alvo seja pública, o utilizador requisitante irá o seguir
+             imediatamente. Caso seja privada, será enviado um pedido para que o utilizador requisitante o siga.</response>
+             <response code="400">Retorna se o utilizador requisitante estiver a tentar seguir a si mesmo ou se já seguir o outro utilizador.</response>
+             <response code="404">Retorna se o username não estiver associado a nenhum utilizador.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.FollowerController.UnfollowUser(System.String)">
+             <summary>
+             Deixa de seguir um utilizador.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 DELETE /unfollow/TRIPALOSKI
+            
+             </remarks>
+             <param name="username"></param>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="400">Retorna se o utilizador requisitante estiver a tentar deixar de seguir a si mesmo ou um outro utilizador que não o segue.</response>
+             <response code="404">Retorna se o username não estiver associado a nenhum utilizador.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.FollowerController.RemoveUserAsFollower(System.String)">
+             <summary>
+             Remove um utilizador da lista de seguidores do utilizador requisitante.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 DELETE /unfollower/TRIPALOSKI
+            
+             </remarks>
+             <param name="username"></param>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="400">Retorna se o utilizador requisitante estiver a tentar remover a si mesmo como seu seguidor ou um outro utilizador que não o segue.</response>
+             <response code="404">Retorna se o username não estiver associado a nenhum utilizador.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.FollowerController.CancelRequest(System.Int32)">
+             <summary>
+             Cancela um pedido feito pelo utilizador requisitante.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 DELETE /1/cancel
+            
+             </remarks>
+             <param name="requestId"></param>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="404">Retorna se o id do pedido não estiver associado a um pedido feito pelo utilizador.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.FollowerController.AcceptRequest(System.Int32)">
+             <summary>
+             Aceita um pedido.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /1/accept
+            
+             </remarks>
+             <param name="requestId"></param>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="404">Retorna se o pedido não tiver sido encontrado.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.FollowerController.RefuseRequest(System.Int32)">
+             <summary>
+             Recusa um pedido.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 DELETE /1/refuse
+            
+             </remarks>
+             <param name="requestId"></param>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="404">Retorna se o id do pedido não estiver associado a um pedido feito para o utilizador.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.NotificationController.GetMyNotifications">
+             <summary>
+             Obtêm a lista de notificações do utilizador requisitante.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /notifications
+            
+             </remarks>
+             <returns>Lista de notificações do utilizador requisitante.</returns>
+             <response code="200">Retorna a lista de notificações do utilizador requisitante.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.NotificationController.UpdateMyNotifications">
+             <summary>
+             Atualiza o estado de todas as notificações do utilizador para "vistas".
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 PUT /notifications
+            
+             </remarks>
+             <returns>Lista de notificações com o estado atualizado.</returns>
+             <response code="200">Retorna a lista de notificações com o estado atualizado.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.NotificationController.UpdateMyNotification(System.Int32)">
+             <summary>
+             Atualiza o estado de uma notificação para vista.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 PUT /notifications/1
+            
+             </remarks>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.NotificationController.DeleteMyNotifications">
+             <summary>
+             Elimina todas as notificações do utilizador requisitante.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 DELETE /notifications
+            
+             </remarks>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.NotificationController.DeleteNotificationById(System.Int32)">
+             <summary>
+             Elimina uma notificação dado o seu id.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 DELETE /notifications/1
+            
+             </remarks>
+             <param name="notificationId"></param>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="403">Retorna se o utilizador requisitante estiver a tentar eliminar uma notificação que não é sua.</response>
+             <response code="404">Retorna se o id fornecido não estiver associado a uma notificação.</response> 
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.PostController.GetFeed">
+             <summary>
+             Obtêm uma lista de publicações feitas pelos utilizadores que o utilizador requisitante segue, por ordem da data de publicação.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /posts/feed
+            
+             </remarks>
+             <returns>Lista de publicações feitas pelos utilizadores que o utilizador requisitante segue, por ordem da data de publicação.</returns>
+             <response code="200">Retorna a lista de publicações feitas pelos utilizadores que o utilizador requisitante segue, por ordem da data de publicação.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.PostController.GetAllPosts">
+             <summary>
+             Obtêm uma lista de publicações que o utilizador requisitante pode visualizar, por ordem da data de publicação.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /posts
+            
+             </remarks>
+             <returns>Lista de publicações que o utilizador requisitante pode visualizar, por ordem da data de publicação.</returns>
+             <response code="200">Retorna a lista de publicações que o utilizador requisitante pode visualizar, por ordem da data de publicação.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.PostController.GetPostsByUser(System.String)">
+             <summary>
+             Obtêm uma lista de publicações feitas por um utilizador, por ordem da data de publicação.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /posts/TRIPALOSKI
+            
+             </remarks>
+             <returns>Lista de publicações feitas por um utilizador, por ordem da data de publicação.</returns>
+             <response code="200">Retorna a lista de publicações feitas por um utilizador, por ordem da data de publicação.</response>
+             <response code="403">Retorna se o utilizador requisitante não tiver permissões para visualizar esta informação.</response>
+             <response code="404">Retorna se o username não estiver associado a um utilizador.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.PostController.GetMyPosts">
+             <summary>
+             Obtêm uma lista de publicações realizadas pelo utilizador requisitante, por ordem da data de publicação.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /posts/myposts
+            
+             </remarks>
+             <returns>Lista de publicações realizadas pelo utilizador requisitante, por ordem da data de publicação.</returns>
+             <response code="200">Retorna a lista de publicações realizadas pelo utilizador requisitante, por ordem da data de publicação.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.PostController.GetPostsMentioned">
+             <summary>
+             Obtêm uma lista de publicações onde o utilizador requisitante foi mencionado, por ordem da data de publicação.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /posts/postsmentioned
+            
+             </remarks>
+             <returns>Lista de publicações onde o utilizador requisitante foi mencionado, por ordem da data de publicação.</returns>
+             <response code="200">Retorna a lista de publicações onde o utilizador requisitante foi mencionado, por ordem da data de publicação.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.PostController.GetPostById(System.Int32)">
+             <summary>
+             Obtêm uma publicação.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /posts/post/1
+            
+             </remarks>
+             <returns>Uma publicação.</returns>
+             <response code="200">Retorna uma publicação.</response>
+             <response code="403">Retorna se o utilizador requisitante não tiver permissões para aceder a esta publicação.</response>
+             <response code="404">Retorna se o id não estiver associado a uma publicação.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.PostController.CreatePost(WriteAndShareWebApi.Models.RequestModels.CreatePostRequest)">
+             <summary>
+             Cria uma nova publicação (máximo 50MB).
+             </summary>
+             <remarks>
+             Exemplo de um pedido (o pedido têm de ser feito em form/data em https):
+            
+                 POST /posts/new
+                 {
+                    "Upload": "Um possível upload efetuado pelo utilizador",
+                    "Link": "Um possível link associado a uma imagem ou vídeo hospedado em terceiros",
+                    "Message": "Mensagem do utilizador associada à publicação",
+                    "Mentions": "TRIPALOSKI;TRIPALOSKI1;TRIPALOSKI2;..."
+                 }
+            
+             </remarks>
+             <param name="post"></param>
+             <returns>A publicação criada.</returns>
+             <response code="200">Retorna a publicação criada.</response>
+             <response code="404">Retorna se um dos utilizadores mencionados não existir.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.PostController.DeletePost(System.Int32)">
+             <summary>
+             Elimina o conteúdo de uma publicação.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 DELETE /posts/post/1
+            
+             </remarks>
+             <param name="postId"></param>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="403">Retorna se o utilizador requisitante não tiver permissões para eliminar esta publicação.</response>
+             <response code="404">Retorna se o id não estiver associado a uma publicação.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.ReactionController.GetMyReactionsToPosts">
+             <summary>
+             Obtêm a lista de publicações nas quais o utilizador requisitante reagiu.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /myreaction/posts
+            
+             </remarks>
+             <returns>Lista de publicações nas quais o utilizador requisitante reagiu.</returns>
+             <response code="200">Retorna uma lista de publicações nas quais o utilizador requisitante reagiu.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.ReactionController.GetPostsReactedByuser(System.String)">
+             <summary>
+             Obtêm a lista de publicações nas quais um utilizador reagiu.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /reaction/TRIPALOSKI/posts
+            
+             </remarks>
+             <returns>Lista de publicações nas quais um utilizador reagiu.</returns>
+             <response code="200">Retorna uma lista de publicações nas quais um utilizador reagiu.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.ReactionController.GetMyReactionsToComments">
+             <summary>
+             Obtêm a lista de comentários nas quais o utilizador requisitante reagiu.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /myreaction/comments
+            
+             </remarks>
+             <returns>Lista de comentários nas quais o utilizador requisitante reagiu.</returns>
+             <response code="200">Retorna uma lista de comentários nas quais o utilizador requisitante reagiu.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.ReactionController.GetCommentsReactedByuser(System.String)">
+             <summary>
+             Obtêm a lista de comentários nas quais um utilizador reagiu.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /reaction/TRIPALOSKI/comments
+            
+             </remarks>
+             <returns>Lista de comentários nas quais um utilizador reagiu.</returns>
+             <response code="200">Retorna uma lista de comentários nas quais um utilizador reagiu.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.ReactionController.Upvote(System.Int32)">
+             <summary>
+             Dá upvote numa publicação ou comentário.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 POST /reaction/1/upvote
+            
+             </remarks>
+             <param name="id"></param>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="403">Retorna se o utilizador não tiver permissões para reagir a esta publicação ou comentário.</response>
+             <response code="404">Retorna se o id não estiver associado a uma publicação ou comentário.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.ReactionController.Downvote(System.Int32)">
+             <summary>
+             Dá downvote numa publicação ou comentário.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 POST /reaction/1/downvote
+            
+             </remarks>
+             <param name="id"></param>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="403">Retorna se o utilizador não tiver permissões para reagir a esta publicação ou comentário.</response>
+             <response code="404">Retorna se o id não estiver associado a uma publicação ou comentário.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.ReactionController.DeleteVote(System.Int32)">
+             <summary>
+             Remove a reação a uma publicação ou comentário
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 DELETE /reaction/1
+            
+             </remarks>
+             <param name="id"></param>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="400">Retorna se o utilizador não tiver sequer reagido a esta publicação ou comentário em primeiro lugar.</response>
+             <response code="404">Retorna se o id não estiver associado a uma publicação ou comentário.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.UserController.GetAllUsersBasicInfo">
+             <summary>
+             Obtêm uma lista que contêm a informação básica de todos os utilizadores.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /users
+            
+             </remarks>
+             <returns>Lista que contêm a informação básica de todos os utilizadores.</returns>
+             <response code="200">Retorna a lista que contêm a informação básica de todos os utilizadores.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.UserController.GetListOfUsersBasicInfo(System.Collections.Generic.List{System.String})">
+             <summary>
+             Obtêm uma lista que contêm a informação básica dos utilizadores requisitados.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 POST /users
+                 {
+                    usernames: ["TRIPALOSKI","TRIAPLOSKI2"]
+                 }
+            
+             </remarks>
+             <returns>Lista que contêm a informação básica de todos os utilizadores requisitados.</returns>
+             <response code="200">Retorna a lista que contêm a informação básica de todos os utilizadores requisitados.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.UserController.GetUserByUsername(System.String)">
+             <summary>
+             Obtêm a informação de um utilizador, dado o seu username.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /users/TRIPALOSKI
+            
+             </remarks>
+             <param name="username"></param>
+             <returns>Retorna a informação do utilizador.</returns>
+             <response code="200">Retorna a informação do utilizador.</response>
+             <response code="403">Retorna se o requisitante não tiver permissões para obter a informação deste utilizador.</response>
+             <response code="404">Retorna se o username não estiver associado a nenhum utilizador.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.UserController.GetUser">
+             <summary>
+             Obtêm as informações do utilizador requisitante.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 GET /users/profile
+            
+             </remarks>
+             <returns>Token de autenticação.</returns>
+             <response code="200">Retorna a informação do utilizador requisitante.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.UserController.UpdateHeader(Microsoft.AspNetCore.Http.IFormFile)">
+             <summary>
+             Atualiza o Header do utilizador requisitante.
+             </summary>
+             <remarks>
+             Exemplo de um pedido (o pedido têm de ser um form/data):
+            
+                 PUT /users/header
+                 {
+                    "header": "Novo header"
+                 }
+            
+             </remarks>
+             <param name="header"></param>
+             <returns>Uma mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="400">Retorna se o formato do ficheiro não for válido.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.UserController.UpdateAvatar(Microsoft.AspNetCore.Http.IFormFile)">
+             <summary>
+             Atualiza o avatar do utilizador requisitante.
+             </summary>
+             <remarks>
+             Exemplo de um pedido (o pedido têm de ser um form/data):
+            
+                 PUT /users/avatar
+                 {
+                    "avatar": "O novo avatar"
+                 }
+            
+             </remarks>
+             <param name="avatar"></param>
+             <returns>Uma mensagem de sucesso.</returns>
+             <response code="200">Retorna uma mensagem de sucesso.</response>
+             <response code="400">Retorna se o formato do ficheiro não for válido.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.UserController.UpdateUser(WriteAndShareWebApi.Models.RequestModels.UpdateUserRequest)">
+             <summary>
+             Atualiza algumas das informações do utilizador requisitante.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 PUT /users/profile
+                 {
+                    "CurrentPassword": "TRIPALOSKI",
+                    "NewPassword": "TRIPALOSKI",
+                    "Email": "TRIPALOSKI_NEW@gmail.com",
+                    "Telephone": "+391 923922222",
+                    "Address": "Not Far Far Away",
+                    "Privacy": "Private"
+                 }
+            
+             </remarks>
+             <param name="update"></param>
+             <returns>O utilizador atualizado.</returns>
+             <response code="200">Retorna as informações do utilizador atualizadas.</response>
+             <response code="400">Retorna se contiver informação inválida.</response>
+             <response code="403">Retorna se a password estiver errada.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="M:WriteAndShareWebApi.Controllers.UserController.DeleteUser">
+             <summary>
+             Elimina toda a informação relativa ao utilizador requisitante.
+             </summary>
+             <remarks>
+             Exemplo de um pedido:
+            
+                 DELETE /users/profile
+            
+             </remarks>
+             <returns>Mensagem de sucesso.</returns>
+             <response code="200">Retorna a mensagem de sucesso.</response>
+             <response code="500">Retorna se ocorrer algum problema interno no servidor.</response>   
+        </member>
+        <member name="F:WriteAndShareWebApi.Utils.HashPassword.SaltSize">
+            <summary>
+            Size of salt.
+            </summary>
+        </member>
+        <member name="F:WriteAndShareWebApi.Utils.HashPassword.HashSize">
+            <summary>
+            Size of hash.
+            </summary>
+        </member>
+        <member name="M:WriteAndShareWebApi.Utils.HashPassword.Hash(System.String,System.Int32)">
+            <summary>
+            Creates a hash from a password.
+            </summary>
+            <param name="password">The password.</param>
+            <param name="iterations">Number of iterations.</param>
+            <returns>The hash.</returns>
+        </member>
+        <member name="M:WriteAndShareWebApi.Utils.HashPassword.Hash(System.String)">
+            <summary>
+            Creates a hash from a password with 10000 iterations
+            </summary>
+            <param name="password">The password.</param>
+            <returns>The hash.</returns>
+        </member>
+        <member name="M:WriteAndShareWebApi.Utils.HashPassword.IsHashSupported(System.String)">
+            <summary>
+            Checks if hash is supported.
+            </summary>
+            <param name="hashString">The hash.</param>
+            <returns>Is supported?</returns>
+        </member>
+        <member name="M:WriteAndShareWebApi.Utils.HashPassword.Verify(System.String,System.String)">
+            <summary>
+            Verifies a password against a hash.
+            </summary>
+            <param name="password">The password.</param>
+            <param name="hashedPassword">The hash.</param>
+            <returns>Could be verified?</returns>
+        </member>
+    </members>
+</doc>

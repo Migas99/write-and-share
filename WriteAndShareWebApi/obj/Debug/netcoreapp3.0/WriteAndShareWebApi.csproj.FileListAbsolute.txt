@@ -1,0 +1,121 @@
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.exe
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.deps.json
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.runtimeconfig.json
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.runtimeconfig.dev.json
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.pdb
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Neo4j.Driver.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\staticwebassets\WriteAndShareWebApi.StaticWebAssets.Manifest.cache
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\staticwebassets\WriteAndShareWebApi.StaticWebAssets.xml
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.AssemblyInfo.cs
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.csproj.CopyComplete
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.pdb
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.xml
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.xml
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Nancy.dll
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Asus\Desktop\LDS - Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.exe
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.deps.json
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.runtimeconfig.json
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.runtimeconfig.dev.json
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.pdb
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.xml
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Nancy.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Neo4j.Driver.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.csprojAssemblyReference.cache
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.AssemblyInfoInputs.cache
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.AssemblyInfo.cs
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.csproj.CopyComplete
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\staticwebassets\WriteAndShareWebApi.StaticWebAssets.Manifest.cache
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\staticwebassets\WriteAndShareWebApi.StaticWebAssets.xml
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.dll
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.xml
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.pdb
+C:\Users\pedro\Desktop\LDS_Especial\LDS_Grupo5_Especial\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.genruntimeconfig.cache
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.exe
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.deps.json
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.runtimeconfig.json
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.runtimeconfig.dev.json
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.pdb
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\WriteAndShareWebApi.xml
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Nancy.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Neo4j.Driver.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\staticwebassets\WriteAndShareWebApi.StaticWebAssets.Manifest.cache
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\staticwebassets\WriteAndShareWebApi.StaticWebAssets.xml
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\scopedcss\bundle\WriteAndShareWebApi.styles.css
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.csproj.CopyComplete
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.dll
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.xml
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.pdb
+C:\Users\Asus\Desktop\Miguel\Universidade\Universidade\3º Ano\1º Semestre\Laboratório de Desenvolvimento de Software\Trabalho Época Especial\LDS_Grupo5_Especial-master\WriteAndShareWebApi\obj\Debug\netcoreapp3.0\WriteAndShareWebApi.genruntimeconfig.cache
